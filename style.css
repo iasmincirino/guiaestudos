@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background: #444;
+}
+   
+/* Navbar */
+nav{
+    height: 80px;
+    width: 100%;
+    background: #333;
+    position: fixed;
+    z-index: 2;
+}
+
+label.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 80px;
+    line-height: 80px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+    display: flex; 
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #f1cc23f3;
+    transition: .5s;
+    text-decoration: none;
+}
+
+nav #icon{
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Início */
+.background{
+    background: url('img/fundo.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.home{
+    width: 97vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1, .home p {
+    color: #f1cc23f3; 
+    text-shadow: 2px 1px rgb(0, 0, 0);
+    text-align: center; 
+}
+
+.home h1 {
+    font-size: 40px;
+}
+
+.home p {
+    font-size: 25px;
+}
+
+/* Responsividade */
+@media (max-width: 800px) {
+    .home h1 { 
+        font-size: 25px; 
+    }
+
+    .home p { 
+        font-size: 15px; 
+    }
+}
+
+@media (max-width: 1048px) {
+    label.logo { 
+        font-size: 20px; 
+        padding: 0 50px; 
+    }
+
+    nav ul { 
+        margin-right: 20px; 
+    }
+    nav a { 
+        font-size: 17px; 
+    }
+}
+
+@media (max-width: 909px) {
+    nav #icon { 
+        display: block; 
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(51, 51, 51, 0.6);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        flex-direction: column; 
+    }
+
+    nav li {
+        margin: 50px 0;
+        line-height: 30px;
+        display: block; 
+    }
+    
+    nav a { 
+        font-size: 20px; 
+    }
+
+    nav ul.show { 
+        left: 0; 
+    }
+}
+
+
+/* Sobre */
+section {
+    padding: 5rem 1rem;
+}
+
+.about span {
+    font-size: 2rem;
+    color: #f1cc23f3;
+}
+  
+.about .title {
+    padding-top: 1rem;
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    color: #222;
+}
+
+.about p {
+    padding: 1.6rem 0;
+    font-size: 1rem;
+    line-height: 2;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Dicas */
+.timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+    color: #fff;
+}
+
+.timeline .timeline-row{
+    display: flex;
+    column-gap: 64px;
+}
+
+.timeline-column .title{
+    font-size: 28px;
+    margin: 32px 0 16px 30px;
+}
+
+.timeline-column .timeline-box{
+    border-left: 2px solid #f1cc23f3;
+}
+
+.timeline-box .timeline-content{
+    position: relative;
+    padding-left: 27px;
+}
+
+.timeline-box .timeline-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10.5px;
+    width: 20px;
+    height: 20px;
+    background: #f1cc23f3;
+    border-radius: 50%;
+}
+
+.timeline-content .content{
+    padding: 24px;
+    border: 2px solid #f1cc23f3;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.timeline-content .content h3{
+    font-size: 19px;
+    margin: 8px 0;
+}
+
+.timeline-content .content p{
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .timeline .timeline-row {
+        flex-direction: column;
+    }
+
+    .timeline-row .timeline-column {
+        margin-bottom: 32px; /* Espaço entre as colunas */
+    }
+}
+
+/* Vídeos */
+.form-box{
+    text-align: center;
+}
+
+.button-box {
+    width: 270px;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 30px;
+    background: #fff;
+    text-align: center;
+}
+
+.toggle-btn {
+    width: 130px; /* metade da largura da button-box */
+    padding: 8px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    z-index: 1; 
+}
+
+#btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 135px; /* metade da largura da button-box */
+    height: 100%;
+    background: #f1cc23f3;
+    border-radius: 30px;
+    transition: .5s;
+    z-index: 0; /* para ficar atrás dos textos dos botões */
+}
+
+.content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+  
+.content .box-container .box {
+    overflow: hidden;
+    position: relative;
+    height: 20rem;
+}
+  
+.content .box-container .box img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.content .box-container .box iframe {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+.matricula .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    border-radius: 5rem;
+    background:#686868;
+    font-size: 1.3rem;
+    color:#fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+}
+
+.matricula .btn:hover{
+    transform: scale(1.1);
+}
+
+.matricula{
+    display: flex;
+    align-items: center;
+}
+
+.matricula .image img{
+    width:40vw;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
+
+.matricula .content h3{
+    font-size: 4rem;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.matricula .content p{
+    font-size: 1.3rem;
+    color:#c7c7c7;
+    padding:1rem 0;
+}
+
+/* media queries  */
+
+@media (max-width:1200px){
+    
+    html{
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:991px){
+    
+    footer{
+        padding:0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .matricula{
+        flex-flow: column-reverse;
+    }
+
+    .matricula .image img{
+        width:100%;
+    }
+
+    .matricula .content h3{
+        font-size: 3rem;
+    }
+
+    .matricula .content p{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,142 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+}
+  
+  .form-container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #333;
+    border: 2px solid #f1cc23f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #f1cc23f3;
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .form-section {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  h3 {
+    color: #f1cc23f3;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f1cc23f3;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #f1cc23f3;
+    outline: none;
+  }
+  
+  .button-row {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .back-btn,
+  .submit-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .back-btn {
+    background-color: #444;
+    color: #fff;
+  }
+  
+  .submit-btn {
+    background-color: #f1cc23f3;
+    color: #000;
+  }
+  
+  .back-btn:hover {
+    background-color: #555;
+  }
+  
+  .submit-btn:hover {
+    background-color: #d4b620;
+  }
+  
+  .already-enrolled {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .already-enrolled a {
+    color: #f1cc23f3;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .already-enrolled a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividade para dispositivos móveis */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+    }
+    .button-row {
+      justify-content: center;
+    }
+  }
+  

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Icon-->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Guia dos Estudos</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav>
+        <label class="logo">Educação</label>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#dicas">Dicas</a></li>
+            <li><a href="#videos">Vídeos</a></li>
+            <li><a href="#matricula">Matrícula</a></li>
+          </ul>
+          <label id="icon">
+            <i class="fa fa-bars"></i>
+          </label>
+    </nav>
+
+    <section class="background" id="home">
+        <div class="home">
+          <h1>Bem-vindo ao nosso site de educação!</h1> 
+          <p>Aqui você encontrará dicas de estudo e um sistema de matrícula para ajudá-lo a alcançar seus objetivos.</p>
+        </div>
+    </section>
+
+    <!--Sobre Nós-->
+    <section class="about" id="sobre">
+      <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+              <img src="img/sobre.jpg" class="w-100" alt="sobre">
+            </div>
+            <div class="col-md-6">
+              <span>O que fazemos?</span>
+              <h3 class="title">Sobre Nós!</h3>
+              <p>Aqui, oferecemos dicas de organização, métodos de estudo e conteúdos que tornam o aprendizado mais leve e interessante. Nosso objetivo é simplificar o aprendizado e incentivar o progresso, com a opção de matrícula em uma escola parceira para apoiar ainda mais o desenvolvimento educacional dos estudantes.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Dicas-->
+    <section class="timeline" id="dicas">
+      <div class="timeline-row">
+        <div class="timeline-column">
+          <h2 class="title">Organização e Planejamento</h2>
+
+          <div class="timeline-box">
+            <div class="timeline-content">
+              <div class="content">
+                <h3>Organização do Tempo</h3>
+                <p>Planejar seu tempo de estudo e descanso ajuda a manter o ritmo e evitar que você se sinta sobrecarregado. Assim, você garante que conseguirá estudar todas as matérias ao longo da semana.</p>
+              </div>
+            </div>
+
+            <div class="timeline-content">
+              <div class="content">
+                <h3>Metas de Aprendizado</h3>
+                <p>Estabeleça objetivos diários ou semanais para organizar seu aprendizado, como “ler um capítulo hoje” ou “fazer 5 exercícios de matemática”. Metas dão direção ao estudo, ajudam a manter o foco e trazem uma sensação de realização quando cumpridas.</p>
+              </div>
+            </div>
+
+            <div class="timeline-content">
+              <div class="content">
+                <h3>Agenda ou Aplicativo de Tarefas</h3>
+                <p>Anotar as datas de provas, entregas de trabalhos e outras tarefas importantes em uma agenda ou aplicativo ajuda a não perder prazos e a ter mais controle sobre o que precisa fazer. Isso mantém sua rotina mais organizada e evita esquecimentos.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="timeline-column">
+          <h2 class="title dois">Técnicas de Aprendizado</h2>
+
+          <div class="timeline-box">
+            <div class="timeline-content">
+              <div class="content">
+                <h3>Método Pomodoro</h3>
+                <p>Essa técnica sugere que você estude por 25 minutos e, depois, faça uma pequena pausa. Esse método ajuda a manter a concentração e evita o cansaço que vem com longos períodos de estudo. Assim, você fica produtivo sem se desgastar tanto.</p>
+              </div>
+            </div>
+
+            <div class="timeline-content">
+              <div class="content">
+                <h3>Métodos de Revisão</h3>
+                <p>Repetir o que aprendeu é essencial para a memória. Escrever ou desenhar o conteúdo ajuda a lembrar melhor, já que a informação fica gravada de maneira visual. Você pode fazer resumos, flashcards, ou mapas mentais para revisar, tornando mais fácil entender e recordar os temas principais.</p>
+              </div>
+            </div>
+
+            <div class="timeline-content">
+              <div class="content">
+                <h3>Simulados e Exercícios</h3>
+                <p>Praticar com questões e simulados permite que você teste o que aprendeu e identifique onde precisa melhorar. É uma maneira eficaz de treinar para provas e fortalecer seu entendimento dos conteúdos. Quanto mais você pratica, mais preparado estará para o que vem pela frente.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!--Vídeos-->
+    <section id="videos">
+      <div class="form-box">
+        <h1>Vídeo-Aulas</h1>
+        <p>Clique nas imagens e elas te mandarão pro YouTube. <br> Tipos de vídeos: Matemática, Português, Ciências e Geografia.</p>
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="leftClick()">Crianças</button>
+          <button type="button" class="toggle-btn" onclick="rightClick()">Adolescentes</button>
+        </div>
+      
+        <!-- Conteúdo para "Crianças" -->
+        <div class="content" id="content-criancas">
+          <div class="box-container container">
+             <div class="box">
+              <a href="https://youtu.be/rljiBbTOFvc?si=LEOFrj9j4vyQKWFW" target="_blank">
+                <img src="img/vid01.jpg" alt="img1">
+              </a>
+             </div>
+       
+             <div class="box">
+              <a href="https://youtu.be/bxHtAsRoXcI?si=yVn0urpjhXHyqtUe" target="_blank">
+                <img src="img/vid02.jpg" alt="img1">
+              </a>
+             </div>
+       
+             <div class="box">
+              <a href="https://youtu.be/I5mRSKQoUkE?si=HyYSxUMY8XhndPK_" target="_blank">
+                <img src="img/vid03.jpg" alt="img1">
+              </a>
+             </div>
+       
+             <div class="box">
+              <a href="https://youtu.be/l5_dcoioiB8?si=-zakZklQ8rphse_7" target="_blank">
+                <img src="img/vid04.jpg" alt="img1">
+              </a>
+             </div>
+          </div>
+        </div>
+      
+        <!-- Conteúdo para "Adolescentes" -->
+        <div class="content" id="content-adolescentes" style="display: none;">
+          <div class="box-container container">
+            <div class="box">
+              <iframe src="https://www.youtube.com/embed/MSZdhDBoXe0?si=M_pWfAiee_R9TavI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+      
+            <div class="box">
+              <iframe src="https://www.youtube.com/embed/LMaE0gAsI04?si=Hnyp3NHSqIt633zi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+      
+            <div class="box">
+              <iframe  src="https://www.youtube.com/embed/R-3SuRx5ios?si=aA4bd604AkEpwJ3Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+      
+            <div class="box">
+              <iframe src="https://www.youtube.com/embed/nrzFMOq1k-w?si=X8eBGDkQBTo4HIIG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+    </section>  
+
+    <!--Footer-->
+    <footer class="matricula" id="matricula">
+      <div class="content">
+        <h3>Matricule-se!</h3>
+        <p>Estamos felizes em oferecer a você a oportunidade de se matricular em nossa escola parceira, que compartilha nossa missão de incentivar o aprendizado e o desenvolvimento dos estudantes. Clique abaixo para garantir a sua vaga!</p>
+        <a href="matricula/matricula.php" class="btn">Formulário</a>
+      </div>
+    
+      <div class="image">
+            <img src="img/matricula.svg">
+      </div>
+    </section>
+    
+    </footer>
+
+    <!--jQuery Navbar Responsiva-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
